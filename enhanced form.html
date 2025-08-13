@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Scouts - Registration & Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #3b0066; 
+            color: white;
+        }
+        header, section, footer {
+            margin-bottom: 30px;
+        }
+        h1, h2, h3, legend {
+            color: #ffd700; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ffd700; 
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        a {
+            color: #00ffea;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            background: #ffd700;
+            color: black;
+            border: none;
+            cursor: pointer;
+            width: auto;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background: #ffea00;
+        }
+        figure img {
+            border: 3px solid #ffd700;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kenya Scouts Association</h1>
+        <p>Building skills, discipline, and leadership for a better future.</p>
+    </header>
+
+    <!-- Lists -->
+    <section>
+        <h2>Kenya Scouts Values</h2>
+        <ul>
+            <li>Loyalty to God, Nation, and Self</li>
+            <li>Service to Others</li>
+            <li>Discipline and Integrity</li>
+            <li>Environmental Conservation</li>
+        </ul>
+
+        <h3>Steps to Join the Scouts</h3>
+        <ol>
+            <li>Learn about the Scout Promise and Law.</li>
+            <li>Attend a local Scouts meeting.</li>
+            <li>Complete your registration form.</li>
+            <li>Participate in induction activities.</li>
+        </ol>
+    </section>
+
+    <!-- Table -->
+    <section>
+        <h2>Kenya Scouts Activities</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camping</td>
+                    <td>Outdoor Skills</td>
+                    <td>Nairobi National Park</td>
+                </tr>
+                <tr>
+                    <td>Community Service</td>
+                    <td>Volunteering</td>
+                    <td>Local Communities</td>
+                </tr>
+                <tr>
+                    <td>Tree Planting</td>
+                    <td>Environment</td>
+                    <td>Various Counties</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    
+    <section>
+        <h2>Kenya Scouts in Action</h2>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Scout_emblem.svg" 
+                 alt="Kenya Scouts Emblem" width="200">
+            <figcaption>Official Kenya Scouts Emblem.</figcaption>
+        </figure>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+        <video controls width="400">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Kenya Scouts Registration Form</h2>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digits only" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Scouting Details</legend>
+                <label for="username">Scout ID / Username:</label>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" required minlength="6">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6" placeholder="Re-enter password">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="region">Scout Region:</label>
+                <select id="region" name="region" required>
+                    <option value="">-- Select Region --</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Central">Central</option>
+                    <option value="Coast">Coast</option>
+                    <option value="North Rift Valley">North Rift Valley</option>
+                     <option value="South Rift Valley">South Rift Valley</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to follow the Scout Promise and Law
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Join Kenya Scouts">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kenya Scouts </p>
+    </footer>
+
+</body>
+</html>
